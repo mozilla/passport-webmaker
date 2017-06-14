@@ -1,14 +1,14 @@
 {
-  "name": "passport-webmaker-oauth",
+  "name": "passport-webmaker",
   "version": "1.0.0",
   "description": "Webmaker (OAuth 2.0) authentication strategy for Passport.js",
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryanwarsaw/passport-webmaker-oauth.git"
+    "url": "git+https://github.com/ryanwarsaw/passport-webmaker.git"
   },
   "bugs": {
-    "url": "https://github.com/ryanwarsaw/passport-webmaker-oauth/issues"
+    "url": "https://github.com/ryanwarsaw/passport-webmaker/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
