@@ -22,5 +22,8 @@
     "id.webmaker.org"
   ],
   "author": "Ryan Warsaw",
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "dependencies": {
+    "passport-oauth2": "^1.4.0"
+  }
 }
