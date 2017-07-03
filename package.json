@@ -1,7 +1,7 @@
 {
   "name": "passport-webmaker",
   "version": "1.0.0",
-  "description": "Webmaker (OAuth 2.0) authentication strategy for Passport.js",
+  "description": "Webmaker authentication strategy for Passport.js",
   "main": "./lib",
   "repository": {
     "type": "git",
