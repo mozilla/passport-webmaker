@@ -76,7 +76,7 @@ app.get('/auth/webmaker',
   passport.authenticate('webmaker', { scopes: ['user', 'email'] }));
 ```
 
-*Note:* Your parameter must be called `scopes` (plural) and not `scope` (singular), otherwise this will throw an error.
+**Note:** Your parameter must be called `scopes` (plural) and not `scope` (singular), otherwise this will throw an error.
 
 ##### What is the structure of the user information returned?
 
@@ -143,16 +143,16 @@ Check out the passport.js documentation for information on [configuring login se
 
 ##### Misc. potential errors and their causes
 
-*Error:* "{"statusCode":400,"error":"Bad Request","message":"child \"state\" fails because [\"state\" is required]","validation":{"source":"query","keys":["state"]}}"
+**Error:** "{"statusCode":400,"error":"Bad Request","message":"child \"state\" fails because [\"state\" is required]","validation":{"source":"query","keys":["state"]}}"
 
-*Cause:* You have either forgotten to set the `state` parameter when initializing your strategy, or have disabled it by setting it to `false`.
+**Cause:** You have either forgotten to set the `state` parameter when initializing your strategy, or have disabled it by setting it to `false`.
 
-*Error:* The `refreshToken` parameter is undefined.
+**Error:** The `refreshToken` parameter is undefined.
 
-*Cause:* This is perfectly normal, `id` doesn't support this type of request. It's just a place holder.
+**Cause:** This is perfectly normal, `id` doesn't support this type of request. It's just a place holder.
 
 ## Credits
 
  - [Jared Hanson](https://github.com/jaredhanson) for his incredible work on passport.js, great documentation and more.
     - Some code snippets and documentation layout were also heavily inspired by his work on his own passport modules!
- - *MoFo DevOps Team* for providing guidance and technical support where necessary, as well as insight on the OAuth flow.
+ - **MoFo DevOps** for providing guidance and technical support where necessary, as well as insight on the OAuth flow.
