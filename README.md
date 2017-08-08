@@ -127,10 +127,14 @@ passport.use(new WebmakerStrategy({
  ));
  ```
 
-##### How can I force `id` to use the `signup` flow rather than `signin`?
+##### How can I change the login flow used by `passport-webmaker`?
 
-You can tell `id` to use the `signup` flow by assigning that value to the `action` parameter in the options object
-when initializing the Webmaker strategy. The default is `signin`.
+You can tell `passport-webmaker` to use the `signup` flow vs. the `signin` flow by assigning the string value to the optional `action` parameter when calling `passport.authenticate()`. The default is `signin`.
+
+```js
+app.get('/auth/webmaker',
+  passport.authenticate('webmaker', { scopes: ['user', 'email'], action: "signup" }));
+```
 
 ##### What is "Error: OAuth 2.0 authentication requires session support when using state."?
 
